@@ -6,18 +6,26 @@ This repository contains a Node.js application that calculates the risk scores f
 
 1. Clone the repository:
 
-git clone https://github.com/azhany/insurance-risk-api-assessment.git
+```
+git clone https://github.com/azhany/insurance-risk-api-assessment.git  
+```
 
 
 2. Install the dependencies:
 
-cd insurance-risk-api-assessment
-npm install
+```
+cd insurance-risk-api-assessment  
+```
+```
+npm install  
+```
 
 
 3. Start the application:
 
-npm start
+```
+npm start  
+```
 
 The server will start running on `http://localhost:3000`.
 
@@ -28,6 +36,7 @@ The required attributes include age, dependents, income, marital status, risk qu
 
 Example request payload:
 
+```json
 {
   "age": 35,
   "dependents": 2,
@@ -37,18 +46,21 @@ Example request payload:
   "house": {"ownership_status": "owned"},
   "vehicle": {"year": 2018}
 }
+```
 
 
 5. The server will calculate the risk profile based on the provided information and return the result in JSON format. The risk profile will include categories such as auto, disability, home, and life, with their respective insurance plans.
 
 Example response payload:
 
+```json
 {
     "auto": "regular",
     "disability": "ineligible",
     "home": "economic",
     "life": "regular"
 }
+```
 
 
 ## Technical Details
@@ -60,8 +72,6 @@ Example response payload:
 - **TypeScript**: TypeScript is used for static typing, allowing for better code organization, maintainability, and early detection of errors.
 
 - **Jest**: Jest is used as the testing framework for unit testing, providing a simple and intuitive way to write tests and assertions.
-
-- **Mock Data**: Mock data is used in the test cases to simulate user input and ensure the correctness of the risk score calculations.
 
 
 ## Comments
