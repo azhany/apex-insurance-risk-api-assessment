@@ -63,6 +63,13 @@ Example response payload:
 ```
 
 
+6. To run the unit tests, run the following command:
+
+```
+npm test
+```
+
+
 ## Technical Details
 
 - **Node.js**: The application is built using Node.js, which provides a lightweight and efficient runtime for building server-side applications.
